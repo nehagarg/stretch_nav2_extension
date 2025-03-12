@@ -7,6 +7,7 @@ Panels:
         - /Global Options1
         - /TF1/Frames1
         - /TF1/Tree1
+        - /Pose1
       Splitter Ratio: 0.5833333134651184
     Tree Height: 462
   - Class: rviz_common/Selection
@@ -725,7 +726,22 @@ Visualization Manager:
         Filter size: 10
         History Policy: Keep Last
         Reliability Policy: Reliable
-        Value: /goal_update
+        Value: /goal_update_python
+      Value: true
+    - Alpha: 1
+      Class: rviz_default_plugins/PointStamped
+      Color: 204; 41; 204
+      Enabled: true
+      History Length: 1
+      Name: PointStamped
+      Radius: 0.20000000298023224
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        Filter size: 10
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
       Value: true
   Enabled: true
   Global Options:
@@ -774,7 +790,7 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Scale: 160
+      Scale: 38.31851577758789
       Target Frame: <Fixed Frame>
       Value: TopDownOrtho (rviz_default_plugins)
       X: 0
@@ -798,5 +814,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1545
-  X: 347
-  Y: 106
+  X: 588
+  Y: 80
